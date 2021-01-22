@@ -1,12 +1,205 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Девайс</title>
+</head>
 
-  </body>
+<body>
+
+  <header>
+    <a>
+      <img src="https://via.placeholder.com/163x35" alt="Логотип магазина «Девайс»">
+    </a>
+    <form action="https://echo.htmlacademy.ru" method="get">
+      <input name="search" placeholder="Поиск по сайту" type="search">
+    </form>
+    <ul>
+      <li><a href="#">Войти</a></li>
+      <li><a href="#">Сравнить</a></li>
+      <li><a href="#">Корзина</a></li>
+    </ul>
+    <nav>
+      <ul>
+        <li><a href="catalog.html">каталог товаров</a></li>
+        <li><a href="#">доставка</a></li>
+        <li><a href="#">гарантия</a></li>
+        <li><a href="#">контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Магазин электроники «Девайс»</h1>
+    <section>
+      <h2>Популярные товары</h2>
+      <div>
+        <input type="radio" name="popular-item" id="slide1" checked>
+        <input type="radio" name="popular-item" id="slide2">
+        <input type="radio" name="popular-item" id="slide3">
+        <div>
+          <img src="https://via.placeholder.com/384x486" alt="Селфи палка">
+          <p>Делай селфи, как Бен Стиллер!</p>
+          <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего
+            5 килограмм.</p>
+          <a href="#">подробнее</a>
+          <dl>
+            <dt>Длина палки</dt>
+            <dd>8,5 м</dd>
+            <dt>Вес палки</dt>
+            <dd>5 кг</dd>
+            <dt>Материал</dt>
+            <dd>Карбон</dd>
+          </dl>
+        </div>
+        <div>
+          <img src="https://via.placeholder.com/385x485" alt="Фитнес браслет">
+          <p>Худеем правильно!</p>
+          <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+          <a href="#">подробнее</a>
+          <dl>
+            <dt>Без подзарядки</dt>
+            <dd>48 часов</dd>
+          </dl>
+        </div>
+        <div>
+          <img src="https://via.placeholder.com/526x334" alt="Дрон">
+          <p>Порхает как бабочка, жалит как пчела!</p>
+          <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную
+            камеру.
+          </p>
+          <a href="#">подробнее</a>
+          <dl>
+            <dt>Дальность полета</dt>
+            <dd>800 м</dd>
+            <dt>Радиус поражения</dt>
+            <dd>50 м</dd>
+          </dl>
+        </div>
+        <div>
+          <label for="slide1"></label>
+          <label for="slide2"></label>
+          <label for="slide3"></label>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Популярные категории</h2>
+      <ul>
+        <li><a><img src="https://via.placeholder.com/160x160" alt="">Виртуальная реальность</a></li>
+        <li><a><img src="https://via.placeholder.com/160x160" alt="">Моноподы для селфи</a></li>
+        <li><a><img src="https://via.placeholder.com/160x160" alt="">Экшн-камеры</a></li>
+        <li><a><img src="https://via.placeholder.com/160x160" alt="">Фитнес-браслеты</a></li>
+        <li><a><img src="https://via.placeholder.com/160x160" alt="">Умные часы</a></li>
+        <li><a><img src="https://via.placeholder.com/160x160" alt="">Квадрокоптеры</a></li>
+      </ul>
+    </section>
+    <section>
+      <h2>Сервисы</h2>
+      <ul>
+        <li>
+          <label><input type="radio" name="service" id="delivery" checked>доставка</label>
+        </li>
+        <li>
+          <label><input type="radio" name="service" id="guarantee">гарантия</label>
+        </li>
+        <li>
+          <label><input type="radio" name="service" id="loan">Кредит</label>
+        </li>
+      </ul>
+      <div>
+        <h3>Доставка</h3>
+        <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
+          заработаем, поднимая его на ваш этаж.</p>
+      </div>
+      <div>
+        <h3>Гарантия</h3>
+        <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар,
+          не дом, конечно же.</p>
+      </div>
+      <div>
+        <h3>Кредит</h3>
+        <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия
+          кредита. Выгодные для нашего банка, разумеется.</p>
+      </div>
+    </section>
+    <section>
+      <h2>Популярные бренды</h2>
+      <ul>
+        <li>
+          <a href="#">
+            <img src="https://via.placeholder.com/260x100" alt="Логотип ДиДжиАй">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="https://via.placeholder.com/260x100" alt="Логотип «СП Гаджетс»">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="https://via.placeholder.com/260x100" alt="Логотип «ГоуПро»">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="https://via.placeholder.com/260x100" alt="Логотип Вайв">
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>О нас</h2>
+      <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+      <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными
+        компаниями:</p>
+      <ul>
+        <li><a href="#">Деловые линии</a></li>
+        <li><a href="#">Автотрейдинг</a></li>
+        <li><a href="#">ЖелДорЭкспедиция</a></li>
+      </ul>
+      <a href="#">Подробнее о нас</a>
+    </section>
+    <section>
+      <h2>Контакты</h2>
+      <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое
+        бывает.</p>
+      <a href="#">
+        <img src="https://via.placeholder.com/560x222" alt="карта">
+      </a>
+      <button type="button">Напишите нам</button>
+    </section>
+  </main>
+
+  <footer>
+    <a>
+      <img src="https://via.placeholder.com/163x35" alt="Логотип магазина «Девайс»">
+    </a>
+    <p>г. Москва, ул. Строителей, 15</p>
+    <ul>
+      <li><a href="#">Войти</a></li>
+      <li><a href="#">Сравнить</a></li>
+      <li><a href="#">Корзина</a></li>
+    </ul>
+    <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+    <ul>
+      <li><a href="#">доставка</a></li>
+      <li><a href="#">гарантия</a></li>
+      <li><a href="#">контакты</a></li>
+    </ul>
+
+    <ul>
+      <li><a href="#">Фейсбук</a></li>
+      <li><a href="#">Интаграм</a></li>
+      <li><a href="#">Твиттер</a></li>
+    </ul>
+
+    <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+      <img src="https://via.placeholder.com/163x35" alt="Логотип HTML Академии">
+    </a>
+  </footer>
+
+</body>
+
 </html>

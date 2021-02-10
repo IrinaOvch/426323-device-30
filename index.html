@@ -9,12 +9,12 @@
   <link rel="apple-touch-icon" href="img/favicon/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link href="vendor/normalize.css" rel="stylesheet">
-  <link href="style.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
 
-  <header class="main-header main-header_main-page container">
+  <header class="main-header container">
     <a class="logo main-header__logo">
       <img src="img/logo.svg" width="163" height="35" alt="Логотип магазина «Девайс»">
     </a>
@@ -27,7 +27,8 @@
       <li><a href="#" class="main-header__user-link main-header__user-link_compare">Сравнить</a></li>
       <li><a href="#" class="main-header__user-link main-header__user-link_cart">Корзина</a></li>
     </ul>
-    <a href="catalog.html" class="main-header__navigation-link main-header__navigation-link_catalogue">каталог товаров</a>
+    <a href="catalog.html" class="main-header__navigation-link main-header__navigation-link_catalogue">каталог
+      товаров</a>
     <nav class="main-header__navigation">
       <ul class="main-header__list">
         <li class="main-header__item"><a href="#" class="main-header__navigation-link">доставка</a></li>
@@ -42,21 +43,21 @@
     <section class="popular-items">
       <h2 class="visually-hidden">Популярные товары</h2>
       <div>
-        <input type="radio" name="popular-item" id="slide1" checked>
-        <input type="radio" name="popular-item" id="slide2">
-        <input type="radio" name="popular-item" id="slide3">
+        <input class="visually-hidden" type="radio" name="popular-item" id="slide1" checked>
+        <input class="visually-hidden" type="radio" name="popular-item" id="slide2">
+        <input class="visually-hidden" type="radio" name="popular-item" id="slide3">
         <div class="popular-item">
           <img src="img/slider_monopod.png" width="384" height="486" alt="Селфи палка" class="popular-item__image">
           <div class="popular-item__info">
-            <p class="popular-item__heading section-heading">Делай селфи, как Бен Стиллер!</p>
+            <p class="popular-item__heading section-heading">Делай селфи, как&nbsp;Бен&nbsp;Стиллер!</p>
             <p class="popular-item__description">Самая длинная палка для селфи доступна в нашем магазине. Восемь
               (Восемь, Карл!) метров длиной и весом всего
               5 килограмм.</p>
             <a href="#" class="popular-item__link button">подробнее</a>
             <table class="popular-item__features">
               <tr>
-                <td class="popular-item__feature-value">8,5 м</td>
-                <td class="popular-item__feature-value">5 кг</td>
+                <td class="popular-item__feature-value">8,5&nbsp;м</td>
+                <td class="popular-item__feature-value">5&nbsp;кг</td>
                 <td class="popular-item__feature-value">Карбон</td>
               </tr>
               <tr>
@@ -67,7 +68,7 @@
             </table>
           </div>
         </div>
-        <div class="popular-item">
+        <div class="popular-item visually-hidden">
           <img src="img/slider_smartwatch.png" width="384" height="486" alt="Фитнес браслет"
             class="popular-item__image">
           <div class="popular-item__info">
@@ -77,7 +78,7 @@
             <a href="#" class="popular-item__link button">подробнее</a>
             <table class="popular-item__features">
               <tr>
-                <td class="popular-item__feature-value">48 часов</td>
+                <td class="popular-item__feature-value">48&nbsp;часов</td>
               </tr>
               <tr>
                 <td class="popular-item__feature-name">Без подзарядки</td>
@@ -85,7 +86,7 @@
             </table>
           </div>
         </div>
-        <div class="popular-item">
+        <div class="popular-item visually-hidden">
           <img src="img/slider_drone.png" width="526" height="334" alt="Дрон" class="popular-item__image">
           <div class="popular-item__info">
             <p class="popular-item__heading section-heading">Порхает как бабочка, жалит как пчела!</p>
@@ -96,8 +97,8 @@
             <a href="#" class="popular-item__link button">подробнее</a>
             <table class="popular-item__features">
               <tr>
-                <td class="popular-item__feature-value">800 м</td>
-                <td class="popular-item__feature-value">50 м</td>
+                <td class="popular-item__feature-value">800&nbsp;м</td>
+                <td class="popular-item__feature-value">50&nbsp;м</td>
               </tr>
               <tr>
                 <td class="popular-item__feature-name">Дальность полета</td>
@@ -149,40 +150,43 @@
       </ul>
     </section>
     <section class="services">
-      <h2 class="visually-hidden">Сервисы</h2>
-      <div class="container services__container">
-        <ul class="services__list">
-          <li>
-            <label class="button services__button"><input type="radio" name="service" id="delivery"
-                class="services__input" checked>доставка</label>
-          </li>
-          <li>
-            <label class="button services__button"><input type="radio" name="service" id="guarantee"
-                class="services__input">гарантия</label>
-          </li>
-          <li>
-            <label class="button services__button"><input type="radio" name="service" id="loan"
-                class="services__input">Кредит</label>
-          </li>
-        </ul>
-        <div class="services__wrapper">
-          <div class="service">
-            <h3 class="service__name section-heading">Доставка</h3>
-            <p class="service__description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
-              бесплатно! Ведь мы неплохо
-              заработаем, поднимая его на ваш этаж.</p>
-          </div>
-          <div class="service">
-            <h3 class="service__name section-heading">Гарантия</h3>
-            <p class="service__description">Если из-за возгорания купленного у нас товара у вас сгорит дом — не
-              переживайте, мы выдадим вам новый. Товар,
-              не дом, конечно же.</p>
-          </div>
-          <div class="service">
-            <h3 class="service__name section-heading">Кредит</h3>
-            <p class="service__description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
-              наиболее выгодные условия
-              кредита. Выгодные для нашего банка, разумеется.</p>
+      <div class="services__wrapper">
+        <h2 class="visually-hidden">Сервисы</h2>
+        <div class="container services__container">
+          <ul class="services__name-list">
+            <li>
+              <label class="button services__button services__button_active"><input type="radio" name="service" id="delivery"
+                  class="services__input" checked>доставка</label>
+            </li>
+            <li>
+              <label class="button services__button"><input type="radio" name="service" id="guarantee"
+                  class="services__input">гарантия</label>
+            </li>
+            <li>
+              <label class="button services__button"><input type="radio" name="service" id="loan"
+                  class="services__input">Кредит</label>
+            </li>
+          </ul>
+          <div class="services__list">
+            <div class="service">
+              <h3 class="service__name section-heading">Доставка</h3>
+              <p class="service__description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
+                бесплатно! Ведь мы неплохо
+                заработаем, поднимая его на ваш этаж.</p>
+            </div>
+            <div class="service visually-hidden">
+              <h3 class="service__name section-heading">Гарантия</h3>
+              <p class="service__description">Если из-за возгорания купленного у нас товара у вас сгорит дом — не
+                переживайте, мы выдадим вам новый. Товар,
+                не дом, конечно же.</p>
+            </div>
+            <div class="service visually-hidden">
+              <h3 class="service__name section-heading">Кредит</h3>
+              <p class="service__description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для
+                вас
+                наиболее выгодные условия
+                кредита. Выгодные для нашего банка, разумеется.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -220,9 +224,9 @@
           многими транспортными
           компаниями:</p>
         <ul class="about-us__list">
-          <li><a href="#" class="about-us__list-item">Деловые линии</a></li>
-          <li><a href="#" class="about-us__list-item">Автотрейдинг</a></li>
-          <li><a href="#" class="about-us__list-item">ЖелДорЭкспедиция</a></li>
+          <li class="about-us__list-item"><a href="#" class="about-us__list-link">Деловые линии</a></li>
+          <li class="about-us__list-item"><a href="#" class="about-us__list-link">Автотрейдинг</a></li>
+          <li class="about-us__list-item"><a href="#" class="about-us__list-link">ЖелДорЭкспедиция</a></li>
         </ul>
         <a href="#" class="about-us__link button">Подробнее о нас</a>
       </section>

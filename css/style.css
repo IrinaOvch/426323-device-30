@@ -100,7 +100,6 @@
 .section-heading {
   font-size: 47px;
   line-height: 58px;
-
   margin: 0;
 }
 
@@ -287,7 +286,7 @@
 .popular-items::before {
   content: "";
   width: 100%;
-  height: 130px;
+  height: 108px;
   background-color: var(--special-yellow);
   position: absolute;
   top: 0;
@@ -295,11 +294,54 @@
   z-index: -1;
 }
 
+.popular-items__list {
+  padding: 0;
+  margin: 0;
+  counter-reset: number;
+  position: relative;
+  height: 469px;
+}
+
 .popular-item {
+  position: absolute;
+  visibility: hidden;
+  counter-increment: number;
+}
+
+.popular-item_current {
+  visibility: visible;
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 40px;
   margin-top: -23px;
+}
+
+.popular-item__info {
+  position: relative;
+}
+
+.popular-item__info::before {
+  content: "";
+  position: absolute;
+  top: 36px;
+  left: 0;
+  width: 100px;
+  height: 7px;
+  background-color: var(--basic-white);
+}
+
+.popular-item__info::after {
+  font-size: 179px;
+  line-height: 219px;
+  color: var(--basic-white);
+  text-transform: uppercase;
+  content: "0"counter(number);
+  position: absolute;
+  top: -15px;
+  right: 17px;
+  width: 212px;
+  height: 170px;
+  z-index: -1;
 }
 
 .popular-item__heading {
@@ -345,6 +387,43 @@
   font-size: 13px;
   line-height: 15px;
   letter-spacing: 0.1em;
+}
+
+.popular-items__slider-controls {
+  display: flex;
+  position: absolute;
+  bottom: 139px;
+  right: 89px;
+}
+
+.popular-items__slider-control {
+  margin-right: 18px;
+  padding: 0;
+  width: 12px;
+  height: 12px;
+  background-color: transparent;
+  border: 1px solid var(--basic-black);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.popular-items__slider-control:last-child {
+  margin-right: 0;
+}
+
+.popular-items__slider-control_current {
+  position: relative;
+}
+
+.popular-items__slider-control_current::before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border: 1px solid var(--basic-black);
+  border-radius: 50%;
 }
 
 /* Popular Categories */
@@ -507,7 +586,6 @@
   font-weight: 300;
   letter-spacing: 0.1em;
   margin: 40px 0 0;
-
   max-width: 495px;
 }
 
@@ -522,7 +600,6 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 40px;
-
   padding: 0;
 }
 
@@ -537,7 +614,6 @@
   width: 80px;
   height: 7px;
   background-color: var(--basic-black);
-
   position: absolute;
   top: -6px;
   left: 0;
@@ -553,7 +629,6 @@
   font-size: 15px;
   line-height: 28px;
   font-weight: 300;
-
   max-width: 473px;
   margin: 0 0 40px;
 }
@@ -567,7 +642,6 @@
 .about-us__list-item {
   font-size: 16px;
   line-height: 28px;
-
   margin-bottom: 15px;
   margin-left: 10px;
   position: relative;
@@ -605,7 +679,6 @@
   width: 80px;
   height: 7px;
   background-color: var(--basic-black);
-
   position: absolute;
   top: -6px;
   left: 0;

@@ -42,11 +42,8 @@
     <h1 class="visually-hidden">Магазин электроники «Девайс»</h1>
     <section class="popular-items">
       <h2 class="visually-hidden">Популярные товары</h2>
-      <div>
-        <input class="visually-hidden" type="radio" name="popular-item" id="slide1" checked>
-        <input class="visually-hidden" type="radio" name="popular-item" id="slide2">
-        <input class="visually-hidden" type="radio" name="popular-item" id="slide3">
-        <div class="popular-item">
+      <ol class="popular-items__list">
+        <li class="popular-item popular-item_current">
           <img src="img/slider_monopod.png" width="384" height="486" alt="Селфи палка" class="popular-item__image">
           <div class="popular-item__info">
             <p class="popular-item__heading section-heading">Делай селфи, как&nbsp;Бен&nbsp;Стиллер!</p>
@@ -67,8 +64,9 @@
               </tr>
             </table>
           </div>
-        </div>
-        <div class="popular-item visually-hidden">
+        </li>
+
+        <li class="popular-item">
           <img src="img/slider_smartwatch.png" width="384" height="486" alt="Фитнес браслет"
             class="popular-item__image">
           <div class="popular-item__info">
@@ -85,8 +83,9 @@
               </tr>
             </table>
           </div>
-        </div>
-        <div class="popular-item visually-hidden">
+        </li>
+
+        <li class="popular-item">
           <img src="img/slider_drone.png" width="526" height="334" alt="Дрон" class="popular-item__image">
           <div class="popular-item__info">
             <p class="popular-item__heading section-heading">Порхает как бабочка, жалит как пчела!</p>
@@ -106,12 +105,12 @@
               </tr>
             </table>
           </div>
-        </div>
-        <div>
-          <label for="slide1"></label>
-          <label for="slide2"></label>
-          <label for="slide3"></label>
-        </div>
+        </li>
+      </ol>
+      <div class="popular-items__slider-controls">
+        <button class="popular-items__slider-control popular-items__slider-control_current" type="button" aria-label="Селфи-палка"></button>
+        <button class="popular-items__slider-control" type="button" aria-label="Фитнес-браслет"></button>
+        <button class="popular-items__slider-control" type="button" aria-label="Дрон"></button>
       </div>
     </section>
     <section class="popular-categories container">

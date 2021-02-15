@@ -29,6 +29,16 @@
     </ul>
     <a href="catalog.html" class="main-header__navigation-link main-header__navigation-link_catalogue">каталог
       товаров</a>
+    <div class="main-header__wrapper">
+      <ul class="main-header__catalogue-links">
+        <li><a href="#" class="main-header__catalogue-link">Виртуальная реальность</a></li>
+        <li><a href="#" class="main-header__catalogue-link">Фитнес-браслеты</a></li>
+        <li><a href="#" class="main-header__catalogue-link">Квадрокоптер</a></li>
+        <li><a href="#" class="main-header__catalogue-link">Моноподы для селфи</a></li>
+        <li><a href="#" class="main-header__catalogue-link">Умные часы</a></li>
+        <li><a href="#" class="main-header__catalogue-link">Экшн-камеры</a></li>
+      </ul>
+    </div>
     <nav class="main-header__navigation">
       <ul class="main-header__list">
         <li class="main-header__item"><a href="#" class="main-header__navigation-link">доставка</a></li>
@@ -108,7 +118,8 @@
         </li>
       </ol>
       <div class="popular-items__slider-controls">
-        <button class="popular-items__slider-control popular-items__slider-control_current" type="button" aria-label="Селфи-палка"></button>
+        <button class="popular-items__slider-control popular-items__slider-control_current" type="button"
+          aria-label="Селфи-палка"></button>
         <button class="popular-items__slider-control" type="button" aria-label="Фитнес-браслет"></button>
         <button class="popular-items__slider-control" type="button" aria-label="Дрон"></button>
       </div>
@@ -132,7 +143,7 @@
           </a>
         </li>
         <li>
-          <a href="#" class="popular-categories__link">
+          <a href="#" class="popular-categories__link popular-categories__link_fitness-bracelet">
             <span class="popular-categories__img popular-categories__img_fitness-bracelet"></span>Фитнес-браслеты
           </a>
         </li>
@@ -153,40 +164,37 @@
         <h2 class="visually-hidden">Сервисы</h2>
         <div class="container services__container">
           <ul class="services__name-list">
-            <li>
-              <label class="button services__button services__button_active"><input type="radio" name="service" id="delivery"
-                  class="services__input" checked>доставка</label>
+            <li class="services__name-item ">
+              <button class="button services__button services__button_active">доставка</button>
             </li>
-            <li>
-              <label class="button services__button"><input type="radio" name="service" id="guarantee"
-                  class="services__input">гарантия</label>
+            <li class="services__name-item">
+              <button class="button services__button">гарантия</button>
             </li>
-            <li>
-              <label class="button services__button"><input type="radio" name="service" id="loan"
-                  class="services__input">Кредит</label>
+            <li class="services__name-item">
+              <button class="button services__button">Кредит</button>
             </li>
           </ul>
-          <div class="services__list">
-            <div class="service">
+          <ul class="services__list">
+            <li class="service service_delivery service_active">
               <h3 class="service__name section-heading">Доставка</h3>
-              <p class="service__description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
+              <p class="service__description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду&nbsp;совершенно
                 бесплатно! Ведь мы неплохо
-                заработаем, поднимая его на ваш этаж.</p>
-            </div>
-            <div class="service visually-hidden">
+                заработаем,&nbsp;поднимая его на ваш этаж.</p>
+              </li>
+            <li class="service service_warranty">
               <h3 class="service__name section-heading">Гарантия</h3>
               <p class="service__description">Если из-за возгорания купленного у нас товара у вас сгорит дом — не
-                переживайте, мы выдадим вам новый. Товар,
+                переживайте, мы выдадим вам новый.<br>Товар,
                 не дом, конечно же.</p>
-            </div>
-            <div class="service visually-hidden">
+              </li>
+            <li class="service service_credit">
               <h3 class="service__name section-heading">Кредит</h3>
               <p class="service__description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для
                 вас
-                наиболее выгодные условия
+                наиболее выгодные<br> условия
                 кредита. Выгодные для нашего банка, разумеется.</p>
-            </div>
-          </div>
+              </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -195,22 +203,22 @@
       <ul class="popular-brands__list">
         <li>
           <a href="#" class="popular-brands__link">
-            <img src="img/logo_dgi.png" width="260" height="100" alt="Логотип ДиДжиАй">
+            <img src="img/logo_dgi_colored.png" width="260" height="100" alt="Логотип ДиДжиАй">
           </a>
         </li>
         <li>
           <a href="#" class="popular-brands__link">
-            <img src="img/logo_sp-gadgets.png" width="260" height="100" alt="Логотип «СП Гаджетс»">
+            <img src="img/logo_sp-gadgets_colored.png" width="260" height="100" alt="Логотип «СП Гаджетс»">
           </a>
         </li>
         <li>
           <a href="#" class="popular-brands__link">
-            <img src="img/logo_go-pro.png" width="260" height="100" alt="Логотип «ГоуПро»">
+            <img src="img/logo_go-pro_colored.png" width="260" height="100" alt="Логотип «ГоуПро»">
           </a>
         </li>
         <li>
           <a href="#" class="popular-brands__link">
-            <img src="img/logo_vive.png" width="260" height="100" alt="Логотип Вайв">
+            <img src="img/logo_vive_colored.png" width="260" height="100" alt="Логотип Вайв">
           </a>
         </li>
       </ul>
@@ -255,15 +263,15 @@
       </ul>
       <a href="tel:+74954959595" class="main-footer__phone-number">Тел.: +7 (495) 495-95-95</a>
       <ul class="main-footer__navigation">
-        <li><a href="#" class="main-footer__navigation-link">доставка</a></li>
-        <li><a href="#" class="main-footer__navigation-link">гарантия</a></li>
-        <li><a href="#" class="main-footer__navigation-link">контакты</a></li>
+        <li class="main-footer__navigation-item"><a href="#" class="main-footer__navigation-link">доставка</a></li>
+        <li class="main-footer__navigation-item"><a href="#" class="main-footer__navigation-link">гарантия</a></li>
+        <li class="main-footer__navigation-item"><a href="#" class="main-footer__navigation-link">контакты</a></li>
       </ul>
 
       <ul class="main-footer__social-links">
-        <li><a href="#" class="main-footer__social-link">Фейсбук</a></li>
-        <li><a href="#" class="main-footer__social-link">Интаграм</a></li>
-        <li><a href="#" class="main-footer__social-link">Твиттер</a></li>
+        <li><a href="#" class="main-footer__social-link main-footer__social-link_facebook"><span class="visually-hidden">Фейсбук</span></a></li>
+        <li><a href="#" class="main-footer__social-link main-footer__social-link_insta"><span class="visually-hidden">Интаграм</span></a></li>
+        <li><a href="#" class="main-footer__social-link main-footer__social-link_twitter"><span class="visually-hidden">Твиттер</span></a></li>
       </ul>
 
       <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" class="main-footer__copyright">
@@ -271,6 +279,33 @@
       </a>
     </div>
   </footer>
+
+  <section class="modal modal_map">
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <iframe class="modal__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112374947369!2d37.527429316047154!3d55.68703400452978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MzEx!5e0!3m2!1sru!2sse!4v1613421834623!5m2!1sru!2sse" width="960" height="560" allowfullscreen title="Офис компании по адресу ул. Строителей, 15, Москва"></iframe>
+    <button class="modal__close-button" type="button" aria-label="Закрыть"></button>
+  </section>
+
+  <section class="modal modal_feedback">
+    <h2 class="visually-hidden">Форма обратной связи</h2>
+    <form class="modal__feedback-form" action="https://echo.htmlacademy.ru" method="post">
+      <label class="modal__input-label">
+        Ваше имя:
+        <input class="modal__input" type="text" name="user-name" placeholder="Имя Фамилия">
+      </label>
+      <label class="modal__input-label">
+        Ваш e-mail:
+        <input class="modal__input" type="email" name="user-email" placeholder="email@example.com">
+      </label>
+
+      <label class="modal__input-label modal__input-label_user-comment">
+        Текст письма:
+        <textarea class="modal__input modal__input_user-comment" name="user-comment" placeholder="В свободной форме"></textarea>
+      </label>
+      <button class="button modal__button" type="submit">Отправить</button>
+    </form>
+    <button class="modal__close-button" type="button" aria-label="Закрыть"></button>
+  </section>
 
 </body>
 

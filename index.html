@@ -19,8 +19,9 @@
       <img src="img/logo.svg" width="163" height="35" alt="Логотип магазина «Девайс»">
     </a>
     <form action="https://echo.htmlacademy.ru" method="get" class="main-header__search-form">
-      <input name="search" placeholder="Поиск по сайту" type="search" class="main-header__search">
-      <button type="submit" class="main-header__search-button  visually-hidden">найти</button>
+      <label for="search" class="main-header__search-label"><span class="visually-hidden">Поиск</span></label>
+      <input name="search" placeholder="Поиск по сайту" type="search" class="main-header__search" id="search">
+      <button type="submit" class="main-header__search-button">найти</button>
     </form>
     <ul class="main-header__user-navigation">
       <li><a href="#" class="main-header__user-link main-header__user-link_login">Войти</a></li>
@@ -34,7 +35,7 @@
         <li><a href="#" class="main-header__catalogue-link">Виртуальная реальность</a></li>
         <li><a href="#" class="main-header__catalogue-link">Фитнес-браслеты</a></li>
         <li><a href="#" class="main-header__catalogue-link">Квадрокоптер</a></li>
-        <li><a href="#" class="main-header__catalogue-link">Моноподы для селфи</a></li>
+        <li><a href="catalog.html" class="main-header__catalogue-link">Моноподы для селфи</a></li>
         <li><a href="#" class="main-header__catalogue-link">Умные часы</a></li>
         <li><a href="#" class="main-header__catalogue-link">Экшн-камеры</a></li>
       </ul>
@@ -50,7 +51,7 @@
 
   <main class="content">
     <h1 class="visually-hidden">Магазин электроники «Девайс»</h1>
-    <section class="popular-items">
+    <section class="popular-items container">
       <h2 class="visually-hidden">Популярные товары</h2>
       <ol class="popular-items__list">
         <li class="popular-item popular-item_current">
@@ -77,11 +78,11 @@
         </li>
 
         <li class="popular-item">
-          <img src="img/slider_smartwatch.png" width="384" height="486" alt="Фитнес браслет"
-            class="popular-item__image">
+          <img src="img/slider_smartwatch.png" width="345" height="485" alt="Фитнес браслет"
+            class="popular-item__image popular-item__image_smartwatch">
           <div class="popular-item__info">
-            <p class="popular-item__heading section-heading">Худеем правильно!</p>
-            <p class="popular-item__description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать
+            <p class="popular-item__heading section-heading">Худеем<br> правильно!</p>
+            <p class="popular-item__description">Мотивирующие фитнес-браслеты помогут найти в себе силы не&nbsp;пропускать
               занятия и соблюдать диету.</p>
             <a href="#" class="popular-item__link button">подробнее</a>
             <table class="popular-item__features">
@@ -96,7 +97,7 @@
         </li>
 
         <li class="popular-item">
-          <img src="img/slider_drone.png" width="526" height="334" alt="Дрон" class="popular-item__image">
+          <img src="img/slider_drone.png" width="526" height="334" alt="Дрон" class="popular-item__image popular-item__image_drone">
           <div class="popular-item__info">
             <p class="popular-item__heading section-heading">Порхает как бабочка, жалит как пчела!</p>
             <p class="popular-item__description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
@@ -133,7 +134,7 @@
           </a>
         </li>
         <li>
-          <a href="#" class="popular-categories__link">
+          <a href="catalog.html" class="popular-categories__link">
             <span class="popular-categories__img popular-categories__img_monopod"></span>Моноподы для&nbsp;селфи
           </a>
         </li>
@@ -175,25 +176,26 @@
             </li>
           </ul>
           <ul class="services__list">
-            <li class="service service_delivery service_active">
+            <li class="service service_delivery ">
               <h3 class="service__name section-heading">Доставка</h3>
-              <p class="service__description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду&nbsp;совершенно
+              <p class="service__description">Мы с удовольствием доставим ваш товар прямо к вашему
+                подъезду&nbsp;совершенно
                 бесплатно! Ведь мы неплохо
                 заработаем,&nbsp;поднимая его на ваш этаж.</p>
-              </li>
+            </li>
             <li class="service service_warranty">
               <h3 class="service__name section-heading">Гарантия</h3>
               <p class="service__description">Если из-за возгорания купленного у нас товара у вас сгорит дом — не
-                переживайте, мы выдадим вам новый.<br>Товар,
-                не дом, конечно же.</p>
-              </li>
-            <li class="service service_credit">
+                переживайте, мы выдадим вам новый.</p>
+              <p class="service__description">Товар, не дом, конечно же.</p>
+            </li>
+            <li class="service service_credit service_active">
               <h3 class="service__name section-heading">Кредит</h3>
               <p class="service__description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для
                 вас
                 наиболее выгодные<br> условия
                 кредита. Выгодные для нашего банка, разумеется.</p>
-              </li>
+            </li>
           </ul>
         </div>
       </div>
@@ -223,7 +225,7 @@
         </li>
       </ul>
     </section>
-    <div class="index-columns">
+    <div class="index-columns container">
       <section class="about-us">
         <h2 class="about-us__heading section-heading">О нас</h2>
         <p class="about-us__text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -245,7 +247,7 @@
         <a href="#" class="contacts__map-link">
           <img src="img/map.jpg" width="560" height="222" alt="карта" class="contacts__map-image">
         </a>
-        <button type="button" class="contacts__button button">Напишите нам</button>
+        <a class="contacts__button button" href="writeus.html">Напишите нам</a>
       </section>
     </div>
   </main>
@@ -269,9 +271,12 @@
       </ul>
 
       <ul class="main-footer__social-links">
-        <li><a href="#" class="main-footer__social-link main-footer__social-link_facebook"><span class="visually-hidden">Фейсбук</span></a></li>
-        <li><a href="#" class="main-footer__social-link main-footer__social-link_insta"><span class="visually-hidden">Интаграм</span></a></li>
-        <li><a href="#" class="main-footer__social-link main-footer__social-link_twitter"><span class="visually-hidden">Твиттер</span></a></li>
+        <li><a href="#" class="main-footer__social-link main-footer__social-link_facebook"><span
+              class="visually-hidden">Фейсбук</span></a></li>
+        <li><a href="#" class="main-footer__social-link main-footer__social-link_insta"><span
+              class="visually-hidden">Интаграм</span></a></li>
+        <li><a href="#" class="main-footer__social-link main-footer__social-link_twitter"><span
+              class="visually-hidden">Твиттер</span></a></li>
       </ul>
 
       <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" class="main-footer__copyright">
@@ -282,7 +287,9 @@
 
   <section class="modal modal_map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
-    <iframe class="modal__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112374947369!2d37.527429316047154!3d55.68703400452978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MzEx!5e0!3m2!1sru!2sse!4v1613421834623!5m2!1sru!2sse" width="960" height="560" allowfullscreen title="Офис компании по адресу ул. Строителей, 15, Москва"></iframe>
+    <iframe class="modal__map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112374947369!2d37.527429316047154!3d55.68703400452978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MzEx!5e0!3m2!1sru!2sse!4v1613421834623!5m2!1sru!2sse"
+      width="960" height="560" allowfullscreen title="Офис компании по адресу ул. Строителей, 15, Москва"></iframe>
     <button class="modal__close-button" type="button" aria-label="Закрыть"></button>
   </section>
 
@@ -300,7 +307,8 @@
 
       <label class="modal__input-label modal__input-label_user-comment">
         Текст письма:
-        <textarea class="modal__input modal__input_user-comment" name="user-comment" placeholder="В свободной форме"></textarea>
+        <textarea class="modal__input modal__input_user-comment" name="user-comment"
+          placeholder="В свободной форме"></textarea>
       </label>
       <button class="button modal__button" type="submit">Отправить</button>
     </form>

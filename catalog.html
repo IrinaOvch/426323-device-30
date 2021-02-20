@@ -19,8 +19,9 @@
       <img src="img/logo.svg" width="163" height="35" alt="Логотип магазина «Девайс»">
     </a>
     <form action="https://echo.htmlacademy.ru" method="get" class="main-header__search-form">
-      <input name="search" placeholder="Поиск по сайту" type="search" class="main-header__search">
-      <button type="submit" class="main-header__search-button  visually-hidden">найти</button>
+      <label for="search" class="main-header__search-label"><span class="visually-hidden">Поиск</span></label>
+      <input name="search" placeholder="Поиск по сайту" type="search" class="main-header__search" id="search">
+      <button type="submit" class="main-header__search-button">найти</button>
     </form>
     <ul class="main-header__user-navigation">
       <li><a href="#" class="main-header__user-link main-header__user-link_login">Войти</a></li>
@@ -34,7 +35,7 @@
         <li><a href="#" class="main-header__catalogue-link">Виртуальная реальность</a></li>
         <li><a href="#" class="main-header__catalogue-link">Фитнес-браслеты</a></li>
         <li><a href="#" class="main-header__catalogue-link">Квадрокоптер</a></li>
-        <li><a href="#" class="main-header__catalogue-link">Моноподы для селфи</a></li>
+        <li><a href="catalog.html" class="main-header__catalogue-link">Моноподы для селфи</a></li>
         <li><a href="#" class="main-header__catalogue-link">Умные часы</a></li>
         <li><a href="#" class="main-header__catalogue-link">Экшн-камеры</a></li>
       </ul>
@@ -93,10 +94,10 @@
                 </div>
                 <div class="range-filter__price-controls">
                   <label class="range-filter__lable range-filter__lable_price-min">
-                    от <input class="range-filter__input" type="number" name="min-price" value="0">
+                    от <input class="range-filter__input" type="number" name="min-price" value="0" min="0">
                   </label>
                   <label class="range-filter__lable range-filter__lable_price-max">
-                    до <input class="range-filter__input" type="number" name="max-price" value="5000">
+                    до <input class="range-filter__input" type="number" name="max-price" value="5000" min="0">
                   </label>
                 </div>
               </div>
@@ -186,14 +187,13 @@
                 <button type="button" class="product__compare">Добавить к сравнению</button>
               </div>
             </li>
-            <li class="product">
+            <li class="product product_new">
               <img src="img/item_monopod-hand.jpg" width="360" height="380" alt="селфи-палка в виде руки"
                 class="product__image">
               <div class="product__info">
                 <h3 class="product__name"><a href="#" class="product__link">Селфи-палка «Следуй за мной»</a></h3>
                 <p class="product__price">1 900 руб.</p>
               </div>
-              <span class="product__new">New</span>
               <div class="product__controls">
                 <button type="button" class="button product__add-to-cart">в корзину</button>
                 <button type="button" class="product__compare">Добавить к сравнению</button>

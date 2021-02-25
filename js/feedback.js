@@ -8,21 +8,26 @@ const feedbackInput = feedbackForm.querySelector('.modal__input_user-comment');
 
 
 
-let isStorageSupport = true;
-let storage = "";
+let hasStorageSupport = true;
+let login = "";
+let username = "";
 
 try {
-  storage = localStorage.getItem('login');
+  login = localStorage.getItem('login');
+  username = localStorage.getItem('username');
 } catch (err) {
-  isStorageSupport = false;
+  hasStorageSupport = false;
 }
 
 function openFeedbackPopup(evt) {
   evt.preventDefault();
   feedbackPopup.classList.add('modal_visible');
   usernameInput.focus();
-  if (storage) {
-    emailInput.value = storage;
+  if (login) {
+    emailInput.value = login;
+  }
+  if (username) {
+    usernameInput.value = username;
   }
 }
 
@@ -43,14 +48,15 @@ feedbackPopupClose.addEventListener('click', function(evt) {
 });
 
 feedbackForm.addEventListener('submit', function(evt) {
-  if (!feedbackInput.value || !emailInput.value) {
+  if (!feedbackInput.value || !emailInput.value || !usernameInput.value) {
     evt.preventDefault();
     feedbackPopup.classList.remove('modal_error')
     feedbackPopup.offsetWidth = feedbackPopup.offsetWidth;
     feedbackPopup.classList.add('modal_error');
   } else {
-    if (isStorageSupport) {
+    if (hasStorageSupport) {
       localStorage.setItem('login', emailInput.value);
+      localStorage.setItem('username', usernameInput.value);
     }
   }
 });

@@ -21,6 +21,48 @@
   --special-grey-input-hover: #EAEAEA;
 }
 
+/* Animations */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 /* Global */
 
 .page {
@@ -102,7 +144,7 @@
 }
 
 .logo {
-  transition: 0.5s;
+  transition: opacity 0.5s;
 }
 
 .logo:hover {
@@ -230,7 +272,7 @@
   position: absolute;
   bottom: 29px;
   left: 0;
-  transition: 0.5s;
+  transition: opacity 0.5s;
 }
 
 .main-header__search:focus+.main-header__search-button::after {
@@ -272,7 +314,7 @@
   padding-left: 25px;
   color: var(--basic-black);
   text-decoration: none;
-  transition: 0.5s;
+  transition: opacity 0.5s;
 }
 
 .main-header__user-link:hover {
@@ -287,7 +329,7 @@
   content: "";
   width: 14px;
   height: 14px;
-  transition: 0.5s;
+  transition: opacity 0.5s;
   position: absolute;
   top: 3px;
   left: 0;
@@ -311,7 +353,7 @@
   content: "";
   width: 22px;
   height: 22px;
-  transition: 0.5s;
+  transition: opacity 0.5s;
   display: inline-block;
   vertical-align: baseline;
   position: relative;
@@ -718,6 +760,7 @@
   border: 0;
   background-color: inherit;
   font: inherit;
+  transition: 0.2s;
 }
 
 .services__button_active {
@@ -1037,7 +1080,7 @@
   content: "";
   width: 14px;
   height: 14px;
-  transition: 0.5s;
+  transition: opacity 0.5s;
   position: absolute;
   top: 4px;
   left: 0;
@@ -1128,7 +1171,7 @@
   height: 32px;
   background-repeat: no-repeat;
   opacity: 0.3;
-  transition: 0.5s;
+  transition: opacity 0.5s;
   margin-right: 20px;
 }
 
@@ -1142,7 +1185,7 @@
   margin-left: 19px;
   padding: 0;
   background-color: transparent;
-  transition: 0.5s;
+  transition: opacity 0.5s;
 }
 
 .main-footer__social-links :last-child .main-footer__social-link {
@@ -1330,7 +1373,7 @@
   height: 20px;
   border: 2px solid var(--basic-black);
   border-radius: 2px;
-  transition: 0.5s;
+  transition: opacity 0.5s;
 }
 
 .filter__input:checked+.filter__option-name::after {
@@ -1499,7 +1542,7 @@
   color: var(--basic-black);
   opacity: 0.3;
   text-decoration: none;
-  transition: 0.5s;
+  transition: opacity 0.5s;
   margin-right: 30px;
 }
 
@@ -1740,10 +1783,6 @@
   text-decoration: none;
 }
 
-.product__link:focus {
-
-}
-
 .product__price {
   font-size: 16px;
   line-height: 18px;
@@ -1766,6 +1805,15 @@
   box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.15);
 }
 
+.modal_visible {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal_error {
+  animation: shake 0.6s;
+}
+
 .modal__close-button {
   width: 55px;
   height: 55px;
@@ -1781,7 +1829,7 @@
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
-  transition: 0.5s;
+  transition: opacity 0.5s;
 }
 
 .modal__close-button:hover {
